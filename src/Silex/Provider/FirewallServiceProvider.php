@@ -55,7 +55,7 @@ class FirewallServiceProvider implements ServiceProviderInterface
         ];
 
         $app['firewall.blocker'] = $app->protect(function (Request $request) {
-            throw new Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException(
+            throw new \Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException(
                 sprintf('Your IP address %s is blocked with firewall rules.', $request->getClientIp()));
         });
 
