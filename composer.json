@@ -1,0 +1,17 @@
+{
+    "name": "lokhman/silex-firewall",
+    "type": "library",
+    "description": "Silex 2.0+ service provider for firewall rules",
+    "keywords": ["silex", "tools", "firewall"],
+    "license": "MIT",
+    "authors": [{
+        "name": "Alexander Lokhman",
+        "email": "alex.lokhman@gmail.com"
+    }],
+    "autoload": {
+        "psr-4": { "Lokhman\\Silex\\": "src/Silex" }
+    },
+    "require": {
+        "silex/silex": "~2.0"
+    }
+}
