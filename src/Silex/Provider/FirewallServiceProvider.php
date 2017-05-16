@@ -31,9 +31,9 @@ namespace Lokhman\Silex\Provider;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\IpUtils;
 use Silex\Application;
+use Symfony\Component\HttpFoundation\IpUtils;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Silex service provider for firewall rules.
@@ -51,7 +51,7 @@ class FirewallServiceProvider implements ServiceProviderInterface
     {
         $app['firewall.options'] = [
             'allow' => [],
-            'deny' => [],
+            'deny'  => [],
         ];
 
         $app['firewall.blocker'] = $app->protect(function (Request $request) {
